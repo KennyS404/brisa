@@ -1,0 +1,47 @@
+version: '3.3'
+
+services:
+  server:
+    build:
+      context: ./server
+    container_name: server
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    ports:
+      - "5000:5000"
+    networks:
+      - project-network
+    depends_on:
+      - mongodb
+
+  whatsapp:
+    build:
+      context: ./whatsapp
+    container_name: whatsapp
+    volumes:
+      - ./whatsapp:/app
+      - /app/node_modules
+    ports:
+      - "11434:11434"
+    networks:
+      - project-network
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - project-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  project-network:
+    driver: bridge

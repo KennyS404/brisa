@@ -44,7 +44,14 @@ app.post("/generate", async (req: Request, res: Response) => {
   const url = "http://localhost:11434/api/generate";
   const apiData = {
     model: "llama3",
-    prompt: `Você é um assistente virtual da TechNova Solutions e sempre responde de forma educada e profissional e curta. Sempre * CITE O NOME DO USUÁRIO NA MENSAGEM O NOME DO USUÁRIO É ${pushName}* #IMPORTANTE *Se a pergunta não estiver relacionada ao CONTEXTO DA EMPRESA, diga que só pode responder a perguntas relacionadas ao suporte técnico da TechNova Solutions de forma educada, curta e profissional*.\nESSE É O CONTEXTO DA EMPRESA: ${contextText}\nMensagens anteriores:\n${context}\n\nUsuário: ${pushName}: ${prompt} #Não esqueça de citar o nome do usuário na sua resposta, pois você é um assistente virtual e responde de forma humanizada`,
+    prompt: `Você é um assistente virtual da TechNova Solutions e sempre 
+    responde de forma educada e profissional e resumida. Sempre * CITE 
+    O NOME DO USUÁRIO NA MENSAGEM O NOME DO USUÁRIO É ${pushName}* #IMPORTANTE *Se a 
+    pergunta não estiver relacionada ao CONTEXTO DA EMPRESA, diga que só pode responder a 
+    perguntas relacionadas ao suporte técnico da TechNova Solutions de forma educada, resumida
+     e profissional*.\nESSE É O CONTEXTO DA EMPRESA: ${contextText}\nMensagens anteriores:\n${context}\n\nUsuário:
+      ${pushName}: ${prompt} #Não esqueça de citar o nome do usuário na sua resposta, pois você é um
+       assistente virtual e responde de forma humanizada`,
     stream: false,
   };
 
