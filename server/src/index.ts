@@ -8,10 +8,14 @@ import { contextText } from "./context";
 const app = express();
 const port = 5000;
 
+const mongoPassword = "ytRdoukyZBXsYHv1";
+
 app.use(bodyParser.json());
 
 mongoose
-  .connect("mongodb://admin:secret@localhost:27017/questions")
+  .connect(`mongodb://admin:${mongoPassword}@localhost:27017/questions`, {
+    authSource: "admin",
+  })
   .then(() => {
     console.log("Connected to MongoDB");
   })
