@@ -1,8 +1,8 @@
 export const contextText = `## FFLIP
 
-**Nome do E-commerce:** FFLIP
+**Nome do E-commerce:** FFLIP Tecnologia
 
-**Slogan:** "Impulsionando seu negócio para o futuro"
+**Slogan da FFLIP É:** "Impulsionando seu negócio para o futuro"
 
 **Descrição do E-commerce:** A FFLIP é uma empresa de tecnologia focada em desenvolver soluções que simplificam a interação entre empresas e seus clientes, garantindo eficiência e satisfação em cada transação. Nosso objetivo é fortalecer e potencializar o setor comercial, tornando-o mais ágil e competitivo.
 
@@ -30,7 +30,7 @@ Ser reconhecida como uma das melhores empresas do segmento, oferecendo transpar�
 - Melhoria contínua para satisfação de clientes
 - Confidencialidade e sigilo de dados
 
-**Onde Estamos, endereço:**
+**Onde Estamos, endereço e Contato:**
 - Av. Porto Alegre, 1250, Sala 006
 - Ed. Gran Solare, Centro
 - Pinhalzinho – SC - CEP 89870-000

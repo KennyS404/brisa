@@ -47,9 +47,12 @@ const startServer = async () => {
         // console.log(prompt, context);
         const url = "http://localhost:11434/api/generate";
         const apiData = {
-          model: "llama3",
+          model: "phi3:14b",
           prompt: `Você é um assistente virtual da Fflip e sempre 
-          responde de forma educada e profissional e resumida. Sempre * CITE 
+          responde de forma educada e profissional e resumida. 
+          Responda com o português BR sem erros gramaticais.
+          Sempre responda exatamente o que está no CONTEXTO DA EMPRESA, sem inventar ou criar coisas fora do CONTEXTO DA EMPRESA Fflip. 
+          Sempre * CITE 
           O NOME DO USUÁRIO NA MENSAGEM O NOME DO USUÁRIO É ${pushName}* #IMPORTANTE *Se a 
           pergunta não estiver relacionada ao CONTEXTO DA EMPRESA, diga que só pode responder a 
           perguntas relacionadas ao suporte técnico da Fflip Solutions de forma educada, resumida
