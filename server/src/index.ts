@@ -47,7 +47,7 @@ const startServer = async () => {
         // console.log(prompt, context);
         const url = "http://localhost:11434/api/generate";
         const apiData = {
-          model: "yarn-llama2:7b",
+          model: "wizardlm2",
           prompt: `Você é um assistente virtual da Fflip e sempre 
           responde de forma educada e profissional e extremamente resumida. 
           Sempre responda exatamente o que está no CONTEXTO DA EMPRESA, sem inventar ou criar coisas fora do CONTEXTO DA EMPRESA Fflip. 
