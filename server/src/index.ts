@@ -58,9 +58,6 @@ const startServer = async () => {
            e profissional*.\nESSE É O CONTEXTO DA EMPRESA: ${contextText}\nMensagens anteriores:\n${context}\n\nUsuário:
             ${pushName}: ${prompt} #Não esqueça de citar o nome do usuário na sua resposta, pois você é um
              assistente virtual e responde de forma humanizada.
-             Exemplos de respostas:
-             Olá João! Tudo bem? Sou o assistente virtual da Fflip, como posso ajudar?
-             Respondendo a sua pergunta, nossos serviçoes são esses aqui...
              `,
           stream: false,
         };
